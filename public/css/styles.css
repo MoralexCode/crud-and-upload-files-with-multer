@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    color: tomato;
+}
+
+label {
+    color: black;
+}
+
+.notice {
+    font-size: 10px;
+    color: cadetblue;
+}
+
+input {
+    border-radius: 0.3em;
+}
+
+.list {
+    background-color: violet;
+    border-radius: 0.3em;
+}
+
+.container {
+    font-size: 25px;
+    background-color: violet;
+    border-radius: 0.9em;
+    padding: 2%;
+}

@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <%- include('partials/header.ejs') %>
+        <h2>Este es el index</h2>
+        <label for="Iteracion"> Iteracion</label>
+        <% for (let i=1; i<5; i++) { %>
+            <p>
+                Iteración numero
+                <%= i %>
+            </p>
+            <% } %>
+                <h2>Lista de personas</h2>
+                <% for (let i=0; i<personas.length; i++) { %>
+                    <p>
+                        <%= personas[i].name %> fundó la empresa
+                            <%= personas[i].enterprise %>.
+                    </p>
+                    <% } %>
+</body>
+
+</html>

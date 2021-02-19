@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <%- include('partials/header.ejs') %>
+        <h2>Registro </h2>
+        <form action="/registro" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="Nombre" name="name" id="name"> <br><br>
+            <input type="text" placeholder="Apellidos" name="surname" id="surname"> <br><br>
+            <input type="text" placeholder="email" name="email"> <br><br>
+            <input type="password" placeholder="Contraceña" name="password"> <br><br>
+
+            <label for="photo"> 
+                Foto de perfil
+                <input type="file" name="profile"> 
+            </label><br>
+            <br><br>
+            <p class="notice" align="justify">
+                Al hacer clic en "Registrarte", aceptas nuestras Condiciones, <br> la Política de datos y la Política de cookies. Es posible que te<br> enviemos notificaciones por SMS, que puedes desactivar<br> cuando quieras.
+            </p>
+            <button type="submit"> Registar</button>
+        </form>
+</body>
+
+</html>
